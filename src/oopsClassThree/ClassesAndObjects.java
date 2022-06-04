@@ -11,14 +11,15 @@ public class ClassesAndObjects {
         animal2.legs = 4;
         animal1.walk();
         animal1.walk(5);
+//        we don't interact with class(engine)...we interact with object(car)
     }
 }
 
 class Animal {
     int legs;
-    String name;
+    String name;//data of class
 
-    public Animal(){
+    public Animal() {
 //        it is default constructor
         System.out.println("Calling default constructor");// as we have written something in constructor
         // this means we have changed the default constructor hence we have done constructor overriding
@@ -26,19 +27,22 @@ class Animal {
 //        constructor can also be overloaded
 
     }
-    public Animal(String newName){
+
+    public Animal(String newName) {
         System.out.println(newName + " was passed while creating object ");
     }
 
-    void walk() {
+    void walk() //member of class
+    {
         System.out.println(name + " is Walking ");
     }
-// two different functions can be made one have parameters and other does not hava....
+
+    // two different functions can be made one have parameters and other does not hava....
 // it is called method overloading
 //    i.e methods with same name and different parameters
 //    we can overload main method...the execution of program starts
 //    from that main method which has String[]args
     void walk(int steps) {
-        System.out.println("Animal walked "+steps+" steps");
+        System.out.println("Animal walked " + steps + " steps");
     }
 }

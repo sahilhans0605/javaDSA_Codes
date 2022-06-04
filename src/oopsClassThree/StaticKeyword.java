@@ -1,15 +1,18 @@
+//math.PI....se yaad krna h
+//#v important...ststic function se static function hi call hoga
+// ...hence main function(static) se static function hi call hoga
 package oopsClassThree;
 
 class Person {
     int age;
     String name;
-    static int count;//....To access this variable in other class we should define it static ...
+    static int count;//....To access this variable in other class(without making any object of class) we should define it static ...
 //    Hence static things can directly be accessed using class name
 //    why we use static...there are somethings that are same for all objects ...it can be directly accessed as Person.count
 //    we use Math.PI...we are not creating object of math class...and using it directly because it is made static
 
     Person() {
-        System.out.println("person(OBJECT) is being created default constructor");
+        System.out.println("person(OBJECT) is being created default constructor");//default constructor override krdiya
         count++;//this value of count does not have any relation with any object
     }
 }
