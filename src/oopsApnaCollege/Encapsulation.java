@@ -1,4 +1,4 @@
-package OOPSApnaCollege;
+package oopsApnaCollege;
 //via encapsulation data hiding is possible in oops...using access modifiers..data which we want/don't want to show tp user...
 public class Encapsulation {
 

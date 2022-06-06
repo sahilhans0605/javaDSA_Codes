@@ -1,4 +1,4 @@
-package OOPSApnaCollege;
+package oopsApnaCollege;
 
 public class Abstraction {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package OOPSApnaCollege;
-
-import java.util.Scanner;
+package oopsApnaCollege;
 
 public class PackagesInJava {
 //    In packages, we write similar code...for example package of adapters/package of data model classes

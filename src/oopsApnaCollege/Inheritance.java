@@ -1,4 +1,4 @@
-package OOPSApnaCollege;
+package oopsApnaCollege;
 //Basically inheritance increases Re-usability of class Suppose we want to implement same shape of button
 //on different buttons...we can make one lass and reuse it for all buttons
 

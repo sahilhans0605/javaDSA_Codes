@@ -1,8 +1,8 @@
 //class memory mein jagah leta h jab program(game) run nhi ho rha tb program(class) harddrive mein hota h
 //par jab program run hota h toh main memory(RAM) fill hona shuru ho jaati h...aur class bhi uss time ram mein hi hoti h
-package OOPSApnaCollege;
+package oopsApnaCollege;
 
-import OOPSApnaCollege.Bank.Account;//bank(package) imported
+import oopsApnaCollege.Bank.Account;//bank(package) imported
 
 class Pen {
     String type;

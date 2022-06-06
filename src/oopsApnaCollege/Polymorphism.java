@@ -1,4 +1,4 @@
-package OOPSApnaCollege;
+package oopsApnaCollege;
 
 class Person {
     int age;

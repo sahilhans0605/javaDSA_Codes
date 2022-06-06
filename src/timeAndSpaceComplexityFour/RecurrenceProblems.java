@@ -1,4 +1,4 @@
-package TimeAndSpaceComplexityFour;
+package timeAndSpaceComplexityFour;
 
 public class RecurrenceProblems {
     public static void main(String[] args) {

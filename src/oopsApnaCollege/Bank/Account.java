@@ -1,4 +1,4 @@
-package OOPSApnaCollege.Bank;
+package oopsApnaCollege.Bank;
 
 public class Account {
     public String name;

@@ -1,4 +1,4 @@
-package TimeAndSpaceComplexityFour;
+package timeAndSpaceComplexityFour;
 
 public class SpaceComplexity {
 //    If we need an array to solve a question....then time complexity..isO(n)

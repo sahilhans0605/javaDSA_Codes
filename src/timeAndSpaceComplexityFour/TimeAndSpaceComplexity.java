@@ -16,7 +16,7 @@
 
 //        If n > 108 the time complexity can be O (log n )or O(1).(10^8 ki kitni power 10^8 se kam rhegi)
 
-package TimeAndSpaceComplexityFour;
+package timeAndSpaceComplexityFour;
 //TimeAndSpace complexity is differentiated by using Asymptotic notation
 //Big O / Omega/ Theta
 public class TimeAndSpaceComplexity {
