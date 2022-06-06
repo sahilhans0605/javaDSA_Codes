@@ -3,7 +3,8 @@ package oopsClassThree;
 
 public class Inheritance {
     public static void main(String[] args) {
-        Samsung s1 = new Samsung();
+        Samsung s1 = new Samsung();//whenever we create an object of derived class firstly the constructor of parent class is called than constructor of derived class is called
+//        it is called constructor chaining
         s1.playGames();// if not found in samsung class then it will find
         // in it's parent class mobile phone
         Apple a1 = new Apple();

@@ -45,7 +45,8 @@ class Rectangle extends Shape {
 
 public class Inheritance {
     public static void main(String[] args) {
-        Triangle t1 = new Triangle();
+        Triangle t1 = new Triangle();//whenever we create an object of derived class firstly the constructor of parent class is called than constructor of derived class is called
+//        it is called constructor chaining
         t1.color = "Purple";//color data is inherited to triangle from shape class
     }
 }
