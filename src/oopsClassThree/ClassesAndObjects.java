@@ -20,7 +20,7 @@ class Animal {
     String name;//data of class
 
     public Animal() {
-//        it is default constructor
+//        it is default constructor....Constructors doesn't return anything
         System.out.println("Calling default constructor");// as we have written something in constructor
         // this means we have changed the default constructor hence we have done constructor overriding
 //        no return type in constructor
