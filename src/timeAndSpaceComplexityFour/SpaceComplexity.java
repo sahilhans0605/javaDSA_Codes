@@ -6,4 +6,6 @@ public class SpaceComplexity {
 //    ....For 2D arrays ...O(n^2)
 //    otherwise if we are making fifty different variables....then it will still remain O(1) time complexity
 //O(1)...is constant
+//    Space complexity of a for loop...0--->N or 0--->m is constant...because array nhi bnaya...memory mein jagah allocate nhi ki
+
 }
