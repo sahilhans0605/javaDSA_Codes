@@ -10,6 +10,8 @@
 //        If n<=500. the time complexity can be O(n^3 ) .
 //
 //        If n<=10 4 the time complexity can be O(n^2)...it is important...n^2 se jyaada ni
+
+//        If n<=10 5 the time complexity can be O(n^2)...it is important...n se jyaada ni...10^5 ka square 10^8 se jyaada ho jaata h
 //
 //        If n<= 106 , the time complexity can be O(nlogn)....2 power nhi chalegi na
 //
