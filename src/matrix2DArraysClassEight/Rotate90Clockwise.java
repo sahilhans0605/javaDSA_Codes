@@ -1,4 +1,4 @@
-package matrix2DArrays;
+package matrix2DArraysClassEight;
 //
 //[1,2,3]
 //[4,5,6]

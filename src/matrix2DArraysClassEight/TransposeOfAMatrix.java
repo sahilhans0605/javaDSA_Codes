@@ -1,4 +1,4 @@
-package matrix2DArrays;
+package matrix2DArraysClassEight;
 
 //Brute force********B[i][j]=a[j][i]***new matrix o(n^2)---for all matrix
 public class TransposeOfAMatrix {

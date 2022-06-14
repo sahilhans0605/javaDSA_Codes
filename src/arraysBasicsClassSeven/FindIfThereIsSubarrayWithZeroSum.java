@@ -1,10 +1,10 @@
-package arraysBasicsClassFive;
+package arraysBasicsClassSeven;
 
 import java.util.HashSet;
 import java.util.Set;
 
 //Brute force...traverse in all subarrays of all length
-//Technique----------------PREFIX SUM*********************Technique to find subarray with sum 0
+//Optimised Technique----------------PREFIX SUM*********************Technique to find subarray with sum 0
 public class FindIfThereIsSubarrayWithZeroSum {
     static boolean subarrayWithZeroSum(int a[]) {
 //        int prefixSum[] = new int[a.length];
@@ -18,7 +18,7 @@ public class FindIfThereIsSubarrayWithZeroSum {
             if (Set.contains(sum)) {
                 return true;
             }
-            Set.add(sum);
+            Set.add(sum);//element insert krdiya set mein
         }
         return false;
     }

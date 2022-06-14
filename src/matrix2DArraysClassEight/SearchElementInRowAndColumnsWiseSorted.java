@@ -1,4 +1,4 @@
-package matrix2DArrays;
+package matrix2DArraysClassEight;
 
 //Brute force two for loop O(N*m)
 public class SearchElementInRowAndColumnsWiseSorted {
@@ -6,6 +6,7 @@ public class SearchElementInRowAndColumnsWiseSorted {
     public static boolean searchInSortedMatrix(int a[][], int key) {
         int row = 0;
         int col = a.length - 1;
+//        [0,a.length-1] means the top right corner of matrix***************
         while (row < a.length && col >= 0) {
             if (a[row][col] == key) {
                 return true;

@@ -1,4 +1,4 @@
-package arraysBasicsClassFive;
+package arraysBasicsClassSix;
 
 public class LongestLengthOfConsecutiveOnes {
     public static void main(String[] args) {

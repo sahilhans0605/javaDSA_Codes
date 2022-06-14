@@ -1,4 +1,4 @@
-package arraysBasicsClassFive;
+package arraysBasicsClassSix;
 
 public class ElementsInMaximumSumSubarray {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 //the elements which do not have any larger elements on their right side
-package arraysBasicsClassFive;
+package arraysBasicsClassSix;
 
 public class LeaderElementInAnArray {
     public static void main(String[] args) {
