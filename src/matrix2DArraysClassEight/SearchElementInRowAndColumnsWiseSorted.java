@@ -7,7 +7,7 @@ public class SearchElementInRowAndColumnsWiseSorted {
         int row = 0;
         int col = a.length - 1;
 //        [0,a.length-1] means the top right corner of matrix***************
-        while (row < a.length && col >= 0) {
+        while (row < a.length && col >= 0) {//bottom left corner************
             if (a[row][col] == key) {
                 return true;
             } else if (key > a[row][col]) {
