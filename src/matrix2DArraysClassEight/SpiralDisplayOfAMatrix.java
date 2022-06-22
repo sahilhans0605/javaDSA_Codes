@@ -17,30 +17,33 @@ public class SpiralDisplayOfAMatrix {
         int er = row - 1;
         int sc = 0;
         int ec = col - 1;
-
-        while (sr <= er && sc <= ec) {
-            for (int i = sc; i <= ec; i++) {
+        int totalElements = row * col;
+        int countOfElements = 0;
+//        ...countofElements... total number of elements ke equal andar hi ho jaayega.....
+//        toh count<= nhi krenge...< hi rkhna h
+        while (countOfElements<totalElements) {
+            for (int i = sc; i <= ec && countOfElements < totalElements; i++) {
                 System.out.print(a[sr][i] + " ");
+                countOfElements++;
             }
             sr++;
 
-            for (int i = sr; i <= er; i++) {
+            for (int i = sr; i <= er && countOfElements < totalElements; i++) {
                 System.out.print(a[i][ec] + " ");
+                countOfElements++;
             }
             ec--;
 
-            if(sr<er){
-                for (int i = ec; i >= sc; i--) {
-                    System.out.print(a[er][i] + " ");
-                }
-                er--;
+            for (int i = ec; i >= sc && countOfElements < totalElements; i--) {
+                System.out.print(a[er][i] + " ");
+                countOfElements++;
             }
-            if(sc<ec){
-                for (int i = er; i >= sr; i--) {
-                    System.out.print(a[i][sc] + " ");
-                }
-                sc++;
+            er--;
+            for (int i = er; i >= sr && countOfElements < totalElements; i--) {
+                System.out.print(a[i][sc] + " ");
+                countOfElements++;
             }
+            sc++;
         }
     }
 }

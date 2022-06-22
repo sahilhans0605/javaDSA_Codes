@@ -40,13 +40,13 @@ public class Rotate90Clockwise {
         }
 //        Reversing all rows
         for (int i = 0; i < a.length; i++) {
-//            reverse krdiya har row ko
-            for (int j = 0; j < a.length / 2; j++) {
-                int swap = a[i][j];
+            for (int j = 0; j < a[0].length / 2; j++) {
+                int temp = a[i][j];
                 a[i][j] = a[i][a.length - j - 1];
-                a[i][a.length - j - 1] = swap;
+                a[i][a.length - j - 1] = temp;
             }
         }
+
         System.out.print("After Reversing: \n");
         System.out.print("Rotated Matrix :  \n");
 

@@ -2,12 +2,12 @@ package arraysBasicsClassSeven;
 
 import java.util.Arrays;
 import java.util.Collections;
-
+//O(NlogN)---and O(N) for loop...O(NlogN+N)===>O(NlogN)
 public class FindThreeNumbersInAnUnsortedArrayWithGivenSum {
     public static void main(String[] args) {
         int a[] = {1, 2, 4, 7, 3, 5, -2, 1};
         int sum = 9;
-        Arrays.sort(a);//O(NlogN)---and O(N) for loop...O(NlogN+N)===>O(NlogN)
+        Arrays.sort(a);
         int start = 0;
         int end = a.length - 1;
         for (int i = 0; i < a.length; i++) {
