@@ -1,10 +1,9 @@
 package recursionClassEight;
-
 import java.util.HashSet;
 import java.util.Set;
-// 2-2 ke usme h 2^0+2^1+2^2+...2^n-1 TIME COMPLEXITY-->2^n
+// 2-2 ke usme h 2^0+2^1+2^2+...2^n-1 TIME COMPLEXITY-->2^n...recursive tree se
 // space complexity....at most 3 things in stack can go...stack height at most n ...O(N)
-// subsequence--->A string formed using the original stringby removing zero or more characters
+// subsequence--->A string formed using the original string by removing zero or more characters
 public class GenerateAllSubsetsORSusequenceOfAString {
     static void generateAllSubsets(String s) {
         Set<String> set = new HashSet<>();
@@ -20,14 +19,14 @@ public class GenerateAllSubsetsORSusequenceOfAString {
 //            System.out.println(curr);
             return;
         }
-        utilGenerateAllSubsets(s, i + 1, curr,set);//current length =0 rhegi
+        utilGenerateAllSubsets(s, i + 1, curr,set);
         utilGenerateAllSubsets(s, i + 1, curr + s.charAt(i),set);//fir ek ek char add hoga
         //ya toh char hoga ya nhi hoga toh ek function mein add krdiya aur ek mein uski jagah empty char
     }
 
     public static void main(String[] args) {
-//        generateAllSubsets("abc");
-        generateAllSubsets("aaa");
+        generateAllSubsets("abc");
+//        generateAllSubsets("aaa");
 
     }
 }

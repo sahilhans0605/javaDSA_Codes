@@ -8,8 +8,11 @@ public class RemoveAllDuplicatesFromString {
 //    SET ki help se
 //    static void removeDuplicates(String s, int i, Set<Character> set) {
 //        if (i == s.length()) {
-//            System.out.println(set);
-//            return;
+//for(String st:set)
+//
+//    {
+//        System.out.println(st);
+//    }//            return;
 //        }
 //
 //        if (!set.contains(s.charAt(i))) {
