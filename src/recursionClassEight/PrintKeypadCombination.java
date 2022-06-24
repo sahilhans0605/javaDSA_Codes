@@ -1,5 +1,5 @@
 package recursionClassEight;
-//maximum length can be pqrs....so in subsequence...maximum 2 choices(2^n)...here maximum 4^n
+
 public class PrintKeypadCombination {
     public static String keypad[] = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
