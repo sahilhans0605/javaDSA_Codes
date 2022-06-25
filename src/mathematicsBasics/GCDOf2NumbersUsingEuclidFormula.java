@@ -1,10 +1,10 @@
-package recursionClassEight;
+package mathematicsBasics;
 
 import java.util.Scanner;
-
+//O(logn)
 public class GCDOf2NumbersUsingEuclidFormula {
     static int gcdEuclidAlgorithm(int a, int b) {
-        if (a % b <= 0) {
+        if (a % b == 0) {
             return b;
         }
         int r = a % b;
