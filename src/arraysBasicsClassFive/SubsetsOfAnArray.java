@@ -11,7 +11,7 @@ public class SubsetsOfAnArray {
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
         }
-        for (int i = 0; i < subsetLength; i++) {//0---2^3
+        for (int i = 0; i < subsetLength; i++) {//0---2^3---->0-8 waala binary to decimal waale ko
             String set = "";
             int temp = i;
             for (int j = a.length - 1; j >= 0; j--) {

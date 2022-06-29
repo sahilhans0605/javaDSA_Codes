@@ -1,7 +1,7 @@
 package backtracking;
 
 import java.util.Scanner;
-
+//       2^n
 public class TargetSumSubsets {
 
     // set is the subset
@@ -16,6 +16,7 @@ public class TargetSumSubsets {
         }
         printTargetSumSubsets(arr, idx + 1, set + arr[idx]+", ", sos + arr[idx], tar);
         printTargetSumSubsets(arr, idx + 1, set, sos, tar);
+//        ya toh number lenge ya nhi lenge
 
     }
 

@@ -18,7 +18,7 @@ public class LargestSubarrayWithEqualZeroAndOne {
 //                    ones++;
 //                }
 //                if (zeroes == ones) {
-//                    ans = Math.max(ans, 2 * zeroes);
+//                    ans = Math.max(ans, 2 * zeroes);//...because zeroes and ones are equal so value will be 2*number of zeroes or ones
 //                }
 //            }
 //        }

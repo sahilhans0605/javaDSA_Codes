@@ -20,9 +20,7 @@ public class RemoveDuplicatesFromSortedArray {
                 continue;
             } else {
                 nums[j++] = nums[i];
-
             }
-
 
         }
 

@@ -13,6 +13,13 @@ public class TransposeOfAMatrix {
             System.out.println();
         }
 //Swapping/Transposing
+
+//  * * * * *
+//    * * * *
+//      * * *
+//        * *
+//          *
+//        aise bss aadha matrix swap krdiya baaki addhe se...toh j=i se start kr rhe h
         for (int i = 0; i < a.length; i++) {
             for (int j = i; j < a.length; j++) {
                 int temp = a[i][j];

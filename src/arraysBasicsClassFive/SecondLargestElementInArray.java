@@ -6,7 +6,7 @@ public class SecondLargestElementInArray {
         int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-        if (a.length < 2) {
+        if (a.length < 2) {//***********************************
             System.out.print("Invalid Input!");
         }
 
