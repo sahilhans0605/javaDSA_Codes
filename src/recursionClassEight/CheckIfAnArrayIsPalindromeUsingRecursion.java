@@ -1,6 +1,7 @@
 package recursionClassEight;
 
-public class CheckIfAnArrayIsPalindromeUsingRecursion {
+public class
+CheckIfAnArrayIsPalindromeUsingRecursion {
 //    Sabse phle ye socho ki ye question loop se kese hoga kya isme pointers lene padenge agr haan to same treeka recursion mein lgao
 
     private static boolean checkPalindromeUsingRecursion(int[] a, int i, int j) {

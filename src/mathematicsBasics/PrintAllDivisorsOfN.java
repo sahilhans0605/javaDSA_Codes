@@ -1,9 +1,11 @@
 package mathematicsBasics;
 
+import java.util.Scanner;
+
 public class PrintAllDivisorsOfN {
     public static void main(String[] args) {
-        int n = 25;
-        //FOR 25 5 WILL BE PRINTED TWICE SO WE APPLY CONDITION N/I==I...THEN DON'T PRINT
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
 //        for (int i = 1; i * i <= n; i++) {
 //            if (n % i == 0) {
 //                System.out.println(i);
@@ -12,18 +14,21 @@ public class PrintAllDivisorsOfN {
 //                }
 //            }
 //        }
-
-//        But they were not sorted...to print them in sorted order...we use this technique
+//        To print them in sorted order
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int i = 1;
         for (; i * i <= n; i++) {
             if (n % i == 0) {
                 System.out.println(i);
             }
         }
+        i--;
         for (; i >= 1; i--) {
             if (n % i == 0) {
-                if (n / i != i)
+                if (n / i != i) {
                     System.out.println(n / i);
+                }
             }
         }
     }
