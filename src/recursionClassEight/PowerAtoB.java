@@ -2,7 +2,8 @@ package recursionClassEight;
 
 import java.util.Scanner;
 
-public class PowerAtoB {
+public class PowerAtoB
+{
     //    a^b---Time complexity O(b)//also this says stack height = n*************
 //    why O(b)....a*a^b-1....like this
     // stack ki height mein main function ko ignore krna h

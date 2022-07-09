@@ -29,7 +29,7 @@ public class SumOfNNaturalNumbersUsingRecursion {
         int n = 5;
         int ans = sumNTo1(n);
         sum1toN(1, n, 0);
-        System.out.println(ans);
+//        System.out.println(ans);
     }
 
 

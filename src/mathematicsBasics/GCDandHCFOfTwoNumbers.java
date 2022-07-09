@@ -3,7 +3,8 @@ package mathematicsBasics;
 import java.util.Scanner;
 //        first number divide by another until remainder is 0 and return the second number
 public class GCDandHCFOfTwoNumbers {
-    static int gcdEuclid(int a, int b) {
+    static int gcdEuclid(int a, int b)
+    {
         if (a < b) {
             return gcdEuclid(b, a);
         }

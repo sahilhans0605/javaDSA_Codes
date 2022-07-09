@@ -13,7 +13,7 @@ public class MinimumSumSubArray {
                 minSum = currSum;
             }
 
-            if (currSum >= 0) {
+            if (currSum > 0) {
                 currSum = 0;
             }
 

@@ -15,9 +15,12 @@ public class ElementsInMaximumSumSubarray {
             }
             if (currSum < 0) {
                 currSum = 0;
-                start = i+1;//start ko next element par le gye...kyoki iss element(i) tk sum 0 ho gya h
+                start = i + 1;//start ko next element par le gye...kyoki iss element(i) tk sum 0 ho gya h
+                end = 0;
             }
         }
+        System.out.println(start + " " + end);
+
         for (int k = start; k <= end; k++) {
             System.out.print(a[k] + " ");
         }

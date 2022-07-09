@@ -3,8 +3,10 @@ package recursionClassEight;
 //2                                 1(sub problem...chhota tower)
 //3                                 2
 
+//O(2^n-1)
 
-public class TowerOfHanoi {
+public class TowerOfHanoi
+{
     static void towerOfHanoi(int n, char from, char to, char aux) {
         //STEPS
 //        A,B,C are tower number 1,2,3....and n is number of disks
@@ -23,7 +25,7 @@ public class TowerOfHanoi {
     }
 
     public static void main(String[] args) {
-        towerOfHanoi(3, 'A', 'C', 'B');
+        towerOfHanoi(4, 'A', 'C', 'B');
 //        A is source
 //        B is helper
 //        C is destination

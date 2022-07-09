@@ -3,7 +3,8 @@ package recursionClassEight;
 
 import java.util.Scanner;
 
-public class FactorialOfANumberUsingRecursion {
+public class FactorialOfANumberUsingRecursion
+{
 
     static int FactorialOfANumberUsingRecursion(int n) {
         if (n == 0) {
