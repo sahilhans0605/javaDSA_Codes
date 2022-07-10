@@ -7,7 +7,6 @@ public class CheckIfStringsAreRotations {
         String s1 = new Scanner(System.in).next();
         String s2 = new Scanner(System.in).next();
         if (s1.length() != s2.length()) {
-            System.out.println("entered");
             System.out.println("False");
         }
         String doubleString = s1 + s1;

@@ -67,7 +67,7 @@ public class RabinKarpAlgorithm {
 //        So as to avoid this collisions we will be taking bit complex hash function for pattern matching
 //        If we have high number of spurious hits then time complexity would be O(mXn)
 //        But if we choose a good hash function then the complexity can be reduced to O(n-m+1)
-//        AND THAT WAY FAR BETTER ALGORITHM IS RABIN KARP ALGORITHM:
+//        AND THAT, WAY FAR BETTER ALGORITHM IS RABIN KARP ALGORITHM:
 //         RABIN KARP ALGORITHM EXPLANATION
         String txt = "GEEKS FOR GEEKS";
         String pat = "GEEK";
