@@ -21,7 +21,7 @@ public class OneNonRepeatingElseRepeatsThrice {
             threeN = threeN | commonThreeN2;
 
         }
-        return threeN1;
+        return threeN1;//because threeN1 indicates that those bits were on in our numbers
     }
 
     public static void main(String[] args) {

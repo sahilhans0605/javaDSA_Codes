@@ -11,6 +11,7 @@ public class BinaryNumberSystem {
 //        2`s complement is additive inverse of binary number
 //STEPS FOR 2s complement
 //                1. Inverse all bits  0010101010(x)----->1101010101
-//                2.Add 1------------>1101010110---->so this is -x
+//                2.Add(sum krdo use 1 se) 1------------>1101010110---->so this is -x
+        System.out.println(~5);
     }
 }

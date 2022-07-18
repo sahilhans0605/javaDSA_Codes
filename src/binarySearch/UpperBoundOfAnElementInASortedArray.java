@@ -26,8 +26,8 @@ public class UpperBoundOfAnElementInASortedArray {
     }
 
     public static void main(String[] args) {
-        int a[] = {10, 20, 30, 30, 40, 50};
-        int key = 30;
+        int a[] = {2, 4, 5, 6, 8, 9, 12};
+        int key = 12;
         System.out.println(upperBound(a, key));
     }
 }

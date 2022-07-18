@@ -1,4 +1,4 @@
-package sortingAlgorithms2;
+package sortingAlgorithm;
 //Time complexity is O(m*n)-->m is the length of the longest string and n is the number of strings
 //space complexity--->O(m*logn)....n is the number of strings and m is the length of the longest string
 public class LongestCommonPrefixUsingDivideAndConquer {

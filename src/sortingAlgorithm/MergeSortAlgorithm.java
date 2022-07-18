@@ -1,4 +1,4 @@
-package sortingAlgorithms2;
+package sortingAlgorithm;
 
 //pooch lete h interview mein
 //merge sort ki time complexity har case mein nlogn hi aati h array sorted ho tb bhi nlogn hi aati h

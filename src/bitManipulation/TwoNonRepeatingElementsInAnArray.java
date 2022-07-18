@@ -7,16 +7,17 @@ public class TwoNonRepeatingElementsInAnArray {
 //    in 42^56 there will be a one, one is surely originated when 1 bit is 0 and another bit is 1
 //    and these two bits are surely one in 42 and another in 56
 //    so we will separate the numbers with 0 and 1 on that position(right most set bit)
+//    JUST wow....
 
     static void twoNonRepeatingElements(int a[]) {
         int xXORy = 0;
-        for (int e : a) {
+        for (int e : a) {//loop1
             xXORy = xXORy ^ e;
         }
         int rightMostSetBitMask = xXORy & -xXORy;
         int zeroBit = 0;
         int oneBit = 0;
-        for (int e : a) {
+        for (int e : a) {//loop2
             if ((rightMostSetBitMask & e) == 0) {
                 zeroBit ^= e;
             } else {

@@ -22,7 +22,7 @@ public class Reverse32BitUnsignedInteger {
     }
 
     public static void main(String[] args) {
-        int n = 43261596;
+        int n = 54;
         int ans = reverseUnsigned(n);
         System.out.println(ans);
     }

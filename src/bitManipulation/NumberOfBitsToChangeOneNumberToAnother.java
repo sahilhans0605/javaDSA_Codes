@@ -8,7 +8,7 @@ public class NumberOfBitsToChangeOneNumberToAnother {
         int count = 0;
         int res = a ^ b;
         while (res > 0) {
-            res = res & (res - 1);
+            res = res & (res - 1);//haan means bits alag alag hongi tbhi
             count++;
         }
         return count;

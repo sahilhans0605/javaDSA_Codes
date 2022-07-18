@@ -1,4 +1,4 @@
-package sortingAlgorithms2;
+package sortingAlgorithm;
 
 //It gives nlogn time complexity rather than n^2
 // it is in memory sorting...it does not take extra space
