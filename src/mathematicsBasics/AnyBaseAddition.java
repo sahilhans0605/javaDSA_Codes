@@ -25,7 +25,7 @@ public class AnyBaseAddition {
             fValue += (d % b) * p;
             n1 /= 10;
             n2 /= 10;
-            p *= b;
+            p *= 10;
         }
         return fValue;
     }

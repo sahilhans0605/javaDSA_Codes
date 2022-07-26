@@ -1,7 +1,7 @@
 package mathematicsBasics;
 
 import java.util.Scanner;
-//Time complexity O(logn)...where n being the number of digits
+//Time complexity O(logn)... where n being the number of digits
 public class CheckPalindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

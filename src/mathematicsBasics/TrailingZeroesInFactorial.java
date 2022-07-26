@@ -2,8 +2,9 @@
 package mathematicsBasics;
 
 import java.util.Scanner;
-
+//Time complexity O(log5n)
 public class TrailingZeroesInFactorial {
+
     public static void main(String[] args) {
 //        number of 5's in multiplication
 //        10!====>10 ke andar 5 aur 5 2trailing zeroes

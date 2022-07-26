@@ -18,7 +18,8 @@ public class PrintAllDivisorsOfN {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int i = 1;
-        for (; i * i <= n; i++) {
+
+        for (; i * i <= n; i++) {//root n tk chalao loop
             if (n % i == 0) {
                 System.out.println(i);
             }

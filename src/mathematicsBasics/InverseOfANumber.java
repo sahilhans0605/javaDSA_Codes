@@ -21,4 +21,3 @@ public class InverseOfANumber {
         System.out.println(invertedNum);
     }
 }
-

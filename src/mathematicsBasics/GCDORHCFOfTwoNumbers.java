@@ -1,7 +1,7 @@
 package mathematicsBasics;
 
 import java.util.Scanner;
-//        first number divide by another until remainder is 0 and return the second number
+//        first number  divide by another until remainder is 0 and return the second number
 public class GCDORHCFOfTwoNumbers {
     static int gcdEuclid(int a, int b)
     {
@@ -28,7 +28,7 @@ public class GCDORHCFOfTwoNumbers {
 //        EUCLID ALGORITHM----------------------------
 
 //        gcd(a, b) = gcd(a - b, b);...where a>b____________________________________
-//        Example gcd (36, 24)==gcd(12, 24)--->reverse number a > b...gcd(24, 12) == gcd(12, 0)
+//        Example gcd (36, 24)==gcd(12, 24)--->reverse number a > b...gcd(24, 12) == gcd(12, 12)
         System.out.print(gcdEuclid(a, b));
 //        More optimised
 

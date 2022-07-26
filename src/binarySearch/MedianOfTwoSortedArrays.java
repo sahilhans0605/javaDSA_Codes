@@ -22,6 +22,7 @@ public class MedianOfTwoSortedArrays {
 //            [0...m1-1]left of a1,[m1...n1-1]right of a1
 //            [0...m2-1]left of a2,[m2...n2-1]right of a2
 
+            /*m1==n1 if only one element exists*/
             int min1 = m1 == n1 ? Integer.MAX_VALUE : a1[m1];//1st array ka second part ka min
             int min2 = m2 == n2 ? Integer.MAX_VALUE : a2[m2];//2nd array ka second part ka min
             int max1 = m1 == 0 ? Integer.MAX_VALUE : a1[m1 - 1];//1st array ka first part ka max
@@ -38,6 +39,6 @@ public class MedianOfTwoSortedArrays {
                 r = m1 - 1;
             }
         }
-        return 0;
+        return 0;//aise hi kuch bhi return krdiya because we believe ki median will always exist
     }
 }

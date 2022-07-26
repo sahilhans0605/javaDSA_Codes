@@ -52,6 +52,7 @@ public class AnyBaseMultiplication {
             d = d % b;
             n1 /= 10;
             n2 /= 10;
+
             finalValue += d * p;
             p *= 10;
         }

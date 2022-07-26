@@ -31,6 +31,7 @@ public class AnyBaseSubtraction {
             fValue += d * p;
             n1 /= 10;
             n2 /= 10;
+
             p *= 10;
         }
         return fValue;

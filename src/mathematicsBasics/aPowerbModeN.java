@@ -9,6 +9,7 @@ import java.util.Scanner;
 //Long digits upto 10^18
 
 public class aPowerbModeN {
+
     static long fastPower(long a, long b, int n) {
         long res = 1;
         while (b > 0) {
@@ -16,7 +17,7 @@ public class aPowerbModeN {
                 res = (res % n * a % n) % n;
             }
             a = (a % n * a % n) % n;
-            b /= 2;
+            b /= 2;//b>>1
         }
 
         return res;

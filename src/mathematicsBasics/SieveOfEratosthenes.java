@@ -31,7 +31,7 @@ import java.util.Scanner;
 //    }
 //}
 
-//print prime numbers till n(O(n(loglogn))
+//print prime numbers till n(O(n(loglogn))//important
 //Firstly assume all prime...so if 2 is prime...then mark all it's factors as non prime
 //then go to 3...3 is prime...mark all multiples of 3 as non prime i.e false
 //4 is already non prime
@@ -39,6 +39,8 @@ import java.util.Scanner;
 //SO MAKE A BOOLEAN ARRAY AND MAKE ALL TRUE(PRIME FIRSTLY)
 
 public class SieveOfEratosthenes {
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

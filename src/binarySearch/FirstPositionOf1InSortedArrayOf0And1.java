@@ -1,7 +1,7 @@
 package binarySearch;
 
 public class FirstPositionOf1InSortedArrayOf0And1 {
-
+//Sorted array h bhai...
     static int firstPositionOf1(int a[]) {
         int l = 0;
         int r = a.length - 1;
@@ -20,7 +20,7 @@ public class FirstPositionOf1InSortedArrayOf0And1 {
     }
 
     public static void main(String[] args) {
-        int a[] = {1, 1, 1, 1, 1, 1};
+        int a[] = {0, 0, 1, 1, 1, 1};
         int ans = firstPositionOf1(a);
         System.out.println(ans);
     }

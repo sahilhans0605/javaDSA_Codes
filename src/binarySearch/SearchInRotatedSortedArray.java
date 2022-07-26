@@ -1,6 +1,7 @@
 package binarySearch;
 
 //All elements are distinct ...binary search lgwana chahte h
+//4 case bnenge iss ques mein sorted rotated array...........h na
 public class SearchInRotatedSortedArray {
 
     static int searchInRotatedArray(int a[], int key) {

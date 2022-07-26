@@ -1,7 +1,7 @@
 package binarySearch;
 
 public class SearchInsertPosition {
-
+//No duplicates/sorted array/less than n time complexity/maximise or minimise...binary search
     static int searchInsertPosition(int a[], int key) {
         int l = 0;
         int r = a.length - 1;

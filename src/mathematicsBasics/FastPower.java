@@ -3,6 +3,7 @@ package mathematicsBasics;
 import java.util.Scanner;
 
 public class FastPower {
+
     static int fastPower(int a, int b) {
         if (b == 0) {
             return 1;//a^0==1;
