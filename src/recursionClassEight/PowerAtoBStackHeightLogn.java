@@ -11,7 +11,7 @@ public class PowerAtoBStackHeightLogn {
         if (b % 2 == 0) {
             return powerAtoB(a, b / 2) * powerAtoB(a, b / 2);
         } else {
-            return powerAtoB(a, b / 2) * powerAtoB(a, b / 2) * a;
+            return powerAtoB(a, b / 2) * powerAtoB(a, b / 2) * a;//a or powerAtoB(a,b%2)
         }
     }
 

@@ -2,7 +2,6 @@ package recursionClassEight;
 //1(full problem)
 //2                                 1(sub problem...chhota tower)
 //3                                 2
-
 //O(2^n-1)
 
 public class TowerOfHanoi
@@ -25,12 +24,13 @@ public class TowerOfHanoi
     }
 
     public static void main(String[] args) {
-        towerOfHanoi(4, 'A', 'C', 'B');
+        towerOfHanoi(3, 'A', 'C', 'B');
 //        A is source
 //        B is helper
 //        C is destination
 //        Number of steps = 2^n-1
 //        O(2^n-1)~2^n...time complexity and space complexity ...number of  steps 2^n...
+//        problems mein se ek ek disk nikalti jaa rhi h
 
     }
 }

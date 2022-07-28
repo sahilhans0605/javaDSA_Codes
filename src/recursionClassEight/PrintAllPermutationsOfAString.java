@@ -2,6 +2,7 @@ package recursionClassEight;
 
 //number of permutations is equal to n!
 public class PrintAllPermutationsOfAString {
+
     static void printPermutations(String str, String permutations) {
         if (str.length() == 0) {
             System.out.println(permutations);

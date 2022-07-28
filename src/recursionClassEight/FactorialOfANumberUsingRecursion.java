@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class FactorialOfANumberUsingRecursion
 {
 
+
     static int FactorialOfANumberUsingRecursion(int n) {
         if (n == 0) {
             return 1;

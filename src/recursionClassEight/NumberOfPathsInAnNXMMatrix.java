@@ -5,7 +5,7 @@ package recursionClassEight;
 
 //
 // Step 1 find base case...So if N==1 or M==1..means only one row or one column...this means only one path is possible
-//so we found the base case...N==1 || M==1...return 1 path possible
+// so we found the base case...N==1 || M==1...return 1 path possible
 //[ down or right |  |  ]
 //[  |   | ]
 //[  |   | ]
@@ -15,6 +15,7 @@ package recursionClassEight;
 //because every function is breaking in left+down....2 and 2
 
 public class NumberOfPathsInAnNXMMatrix {
+
     static int numberOfPaths(int n, int m) {
         if (n == 1 || m == 1) {//here N==2 wil not be correct because...N(rows) agr 2 hogyi toh columns kitne bhi ho skte h....
 //            but for N==1....only one line to travel
