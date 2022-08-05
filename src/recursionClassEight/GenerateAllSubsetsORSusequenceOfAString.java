@@ -27,7 +27,7 @@ public class GenerateAllSubsetsORSusequenceOfAString {
     }
 
     public static void main(String[] args) {
-        generateAllSubsets("abc");
+        generateAllSubsets("yvTA");
 //        generateAllSubsets("aaa");
 
     }

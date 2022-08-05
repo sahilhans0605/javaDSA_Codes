@@ -1,8 +1,11 @@
 package recursionClassEight;
+
 //O(n)...string length n ...traversed once
+
 public class FindTheFirstAndLastOccurenceOfElementInAString {
     public static int first =-1;
     public static int last =-1;
+
 
     static void occurenceOfElement(String s, char ele, int i) {
         if (i == s.length()) {
@@ -21,6 +24,7 @@ public class FindTheFirstAndLastOccurenceOfElementInAString {
         occurenceOfElement(s, ele, i+1);
 
     }
+
 
     public static void main(String[] args) {
         String s = "abaacdaefaah";

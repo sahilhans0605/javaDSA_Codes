@@ -6,7 +6,7 @@ public class KeypadCombinationPepcoding {
     static String[] codes = {".;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
     static void keypadCombination(String str, String ans) {
-        if (str.length() == 0) {
+        if (str.length() == 0) { // * * *
             System.out.println(ans);
             return;
         }
@@ -14,7 +14,7 @@ public class KeypadCombinationPepcoding {
         int currCharNumber= currChar-'0';
         String roq = str.substring(1);
 
-        for (int i = 0; i < codes[currCharNumber].length(); i++) {
+        for (int i = 0; i < codes[currCharNumber].length(); i++) {//7 index pe jo number h uski length
             keypadCombination(roq,ans+codes[currCharNumber].charAt(i));
         }
     }
@@ -23,6 +23,5 @@ public class KeypadCombinationPepcoding {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         keypadCombination(str, "");
-
     }
 }

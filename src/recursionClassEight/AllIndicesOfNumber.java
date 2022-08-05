@@ -36,6 +36,5 @@ public class AllIndicesOfNumber {
         for (int i = 0; i < fsf; i++) {
             System.out.println(indesArray[i]+" ");
         }
-
     }
 }
