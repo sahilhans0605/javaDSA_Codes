@@ -8,7 +8,7 @@ public class PrintNaturalNumbers {
         }
 //        all these calls are saved in stacks
 
-//        for every parameter in function...n here new memory space is allocated in stack evry time the function is called
+//        for every parameter in function...n here new memory space is allocated in stack every time the function is called
 //        n is created again and again(7 steps hence 7 times)..memory space
 //        1.Base condition true...n==0...return to previous(below) layer
 //        2.printNumb(3)---->prints 1 and n=0 (call) No more statements written below n-1...hence return again
