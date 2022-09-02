@@ -23,5 +23,17 @@ public class ReverseTheArray {
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
+
+
+//         ----------------ARRAY LIST---------------------------
+//        for(int i=0;i<arr.size()/2;i++){
+//            int temp=arr.get(i);
+//            arr.set(i, arr.get(arr.size()-i-1));
+//            arr.set(arr.size()-i-1,temp);
+//
+//        }
+//        for(int e:arr){
+//            System.out.print(e+" ");
+//        }
     }
 }

@@ -18,7 +18,25 @@ public class PrintAllSubsequencePepcoding {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = "a";
+        String s = "abc";
         printSubsequence(s, "");
     }
 }
+//-----------------------------------Method 2----------------------------------
+//package recursionClassEight;
+//
+//public class PrintPowerSetOrSubsequences {
+//
+//    static void printSubsequence(String s, int i, String newString) {
+//        if (i == s.length()) {
+//            System.out.println(newString);
+//            return;
+//        }
+//        printSubsequence(s, i + 1, newString);
+//        printSubsequence(s, i + 1, newString + s.charAt(i));
+//    }
+//
+//    public static void main(String[] args) {
+//        printSubsequence("abc", 0, "");
+//    }
+//}
