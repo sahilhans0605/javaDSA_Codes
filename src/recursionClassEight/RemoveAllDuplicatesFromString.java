@@ -32,7 +32,7 @@ public class RemoveAllDuplicatesFromString {
     }
 
     public static void main(String[] args) {
-        String s = "abbccd-1a";//- alag xchar h and 1 alag char hai
+        String s = "abbccda";//- alag xchar h and 1 alag char hai
         Set<Character> set = new HashSet<>();
 //        removeDuplicates(s, 0, set);
         String newString = "";
