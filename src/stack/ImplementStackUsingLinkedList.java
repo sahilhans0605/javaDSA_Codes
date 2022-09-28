@@ -1,6 +1,8 @@
 package stack;
 
-public class ImplementStackUsingLinkedList {//Because the static keyword is meant for providing
+public class ImplementStackUsingLinkedList {
+//All operations in O(1)
+    //Because the static keyword is meant for providing
     // memory and executing logic without creating Objects,
     // a class does not have a value logic directly,
     // so the static keyword is not allowed for outer class and mainly as mentioned above static
@@ -9,7 +11,7 @@ public class ImplementStackUsingLinkedList {//Because the static keyword is mean
     Node head;
     int size = 0;
 
-    static class Node {
+    class Node {
         int data;
         Node next;
 
@@ -25,7 +27,7 @@ public class ImplementStackUsingLinkedList {//Because the static keyword is mean
 //            return;
 //        }
         newNode.next = head;
-        head = newNode;
+        head = newNode;//head change krdiya
         size++;
     }
 
@@ -46,8 +48,8 @@ public class ImplementStackUsingLinkedList {//Because the static keyword is mean
         return size;
     }
 
-    int peek() throws Exception{
-        if(isEmpty()) throw new Exception("Stack is Empty");
+    int peek() throws Exception {
+        if (isEmpty()) throw new Exception("Stack is Empty");
         return head.data;//size-- nhi krenge yha pe....
     }
 

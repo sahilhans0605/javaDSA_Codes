@@ -19,10 +19,11 @@ public class DisjointSet {
 //        if (x != parent[x]) {
 //            return find(parent[x]);
 //        }
-        if (x != parent[x]) {//compression by path
+        if (x != parent[x]) {//compression by path//O(m*small constant number...max 4.....linear time complexity for m operations)
             parent[x] = find(parent[x]);//parent[x] mein value updatekrdo...path har baar traverse nhi hona chahiye
         }
-        return x;
+//        return x;
+        return parent[x];//for path compression
     }
 
 //    union into one group if they are not in a group already...make friends

@@ -14,7 +14,9 @@ public class PreviousNextGreaterSmaller {
                 stack.pop();
             }
             if (stack.isEmpty()) {
+
                 ans[i] = -1;
+
             } else {
                 ans[i] = stack.peek();
             }
@@ -82,6 +84,7 @@ public class PreviousNextGreaterSmaller {
             s.push(a[i]);
             j++;
         }
+//        reversing the array
         int left = 0;
         int right = a.length - 1;
         while (left < right) {

@@ -58,7 +58,7 @@ public class FindMaximumAreaInAHistogram {
         return ans;
     }
 
-    static int maximumAreaHistogramStack(int a[]) {
+    static int  maximumAreaHistogramStack(int a[]) {
         Stack<Integer> stack = new Stack<>();
 
         int maxArea = Integer.MIN_VALUE;

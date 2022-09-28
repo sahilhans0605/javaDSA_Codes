@@ -13,8 +13,8 @@ public class ImplementStackUsingArray {
     }
 
     boolean push(int element) throws Exception {
-        if (top == capacity - 1) {
-            throw new Exception("Stack is full");
+        if (top == capacity - 1) {//overflow
+            throw new Exception("Stack is full");//boolean return type so that we can throw exception if element is not pushed
         }
         top++;
         a[top] = element;
@@ -22,7 +22,7 @@ public class ImplementStackUsingArray {
     }
 
     int pop() throws Exception {
-        if (top == -1) {
+        if (top == -1) {//underflow
             throw new Exception("Stack is empty");
         }
         int ans = a[top];
@@ -30,14 +30,19 @@ public class ImplementStackUsingArray {
         return ans;
     }
 
-    int peak()throws Exception{
-        if (top == -1) {
+    int peak() throws Exception {
+        if (top == -1) {//underflow
             throw new Exception("Stack is empty");
         }
         return a[top];
     }
-    boolean isEmpty(){
-        return top==-1;
+
+    boolean isEmpty() {
+        return top == -1;
+    }
+
+    int size() {
+        return top + 1;
     }
 
     public static void main(String[] args) {

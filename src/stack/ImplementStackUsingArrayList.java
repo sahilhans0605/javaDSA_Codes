@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class ImplementStackUsingArrayList {
 
-
     int size = 0;
     ArrayList<Integer> arrayList = new ArrayList<>();
 
@@ -12,7 +11,7 @@ public class ImplementStackUsingArrayList {
         return arrayList.size() == 0;
     }
 
-    void push(int element) {
+    void push(int element) {//array list keeps doubling it's size...
         arrayList.add(element);
         size++;
     }
