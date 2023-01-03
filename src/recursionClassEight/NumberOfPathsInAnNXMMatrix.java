@@ -17,17 +17,20 @@ package recursionClassEight;
 public class NumberOfPathsInAnNXMMatrix {
 
     static int numberOfPaths(int n, int m) {
-        if (n == 1 || m == 1) {//here N==2 wil not be correct because...N(rows) agr 2 hogyi toh columns kitne bhi ho skte h....
+        if (n == 1 && m == 1) {//here N==2 wil not be correct because...N(rows) agr 2 hogyi toh columns kitne bhi ho skte h....
 //            but for N==1....only one line to travel
             return 1;
         }
-        int rightSideAns = numberOfPaths(n, m - 1);//right side mein ek column cross krliya isliye m-1
-        int downSideAns = numberOfPaths(n - 1, m);//left side mein ek row cross krli isliye ab jo bacha hua ans h usme se 1 row hta do
+
+        if (n < 1 || m < 1) {
+            return 0;
+        }
+        int rightSideAns = numberOfPaths(n - 1, m);//right side mein ek column cross krliya isliye m-1
+        int downSideAns = numberOfPaths(n, m - 1);//left side mein ek row cross krli isliye ab jo bacha hua ans h usme se 1 row hta do
         return rightSideAns + downSideAns;
     }
 
-    public static void main(String[] args)
-    {
-        System.out.println(numberOfPaths(4,3));
+    public static void main(String[] args) {
+        System.out.println(numberOfPaths(51, 9));
     }
 }

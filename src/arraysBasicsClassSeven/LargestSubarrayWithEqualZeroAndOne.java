@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class LargestSubarrayWithEqualZeroAndOne {
     public static void main(String[] args) {
-        int a[] = {0, 0, 0, 0, 1, 0, 1, 1, 0, 1};
+        int a[] = {0,1};
 //O(N^2)--------------------Brute force
 //        int zeroes = 0;
 //        int ones = 0;
@@ -23,7 +23,7 @@ public class LargestSubarrayWithEqualZeroAndOne {
 //            }
 //        }
 //--------Optimised approach----agr 0 hai to -1 krlo else agr 1 hai toh +1 krdo
-        int prefixSum[] = new int[a.length];
+        int[] prefixSum = new int[a.length];
         prefixSum[0] = a[0] == 0 ? -1 : 1;
         //agr element 0 h toh -1 vrna +1 in previous added sum
         for (int i = 1; i < a.length; i++) {

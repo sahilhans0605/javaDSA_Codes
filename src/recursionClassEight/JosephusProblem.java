@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class JosephusProblem {
     public static int solution(int n, int k) {
         if (n == 1) {
-
             return 0;//n==1 one person left so return 0..because the index of that single person is zero
         }
         return (solution(n - 1, k) + k) % n;

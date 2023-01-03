@@ -1,6 +1,6 @@
 package arraysBasicsClassSeven;
 
-//Find the maximum j-i such that arr[j]>arr[i]**********asked in every conpany
+//Find the maximum j-i such that arr[j]>arr[i]**********asked in every company
 public class MaximumjiSuchThatArrjGreaterArri {
     //    Brute force...two loops j=i+1...if(a[j]>a[i])ans=max(ans,j-i);
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class MaximumjiSuchThatArrjGreaterArri {
         int i = 0, j = 0;
         int ans = 0;
         while (i < n && j < n) {
-            if (leftMin[i] < rightMax[j]) {
+            if (leftMin[i] < rightMax[j]) {//arr[i]<arr[j]
                 ans = Math.max(ans, j - i);
                 j++;
             } else {
@@ -31,6 +31,5 @@ public class MaximumjiSuchThatArrjGreaterArri {
 
         }
         System.out.println(ans);
-
     }
 }

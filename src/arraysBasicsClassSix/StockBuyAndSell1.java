@@ -8,7 +8,7 @@ public class StockBuyAndSell1 {
         int profit;
         int maxProfit = 0;
         for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < buyingPrice) {
+            if (prices[i] < buyingPrice) {//minimum find kiya inhone....aur saath saath profit bhi check krliya subtract krte krte
                 buyingPrice = prices[i];
             }
             profit = prices[i] - buyingPrice;

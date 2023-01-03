@@ -19,7 +19,7 @@ public class ElementsInMaximumSumSubarray {
                 end = 0;
             }
         }
-        System.out.println(start + " " + end);
+//        System.out.println(start + " " + end);
 
         for (int k = start; k <= end; k++) {
             System.out.print(a[k] + " ");

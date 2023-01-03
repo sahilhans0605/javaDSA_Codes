@@ -2,7 +2,7 @@ package matrix2DArraysClassEight;
 
 //Brute force********B[i][j]=a[j][i]***new matrix o(n^2)---for all matrix
 public class TransposeOfAMatrix {
-//    swapping along diagonal------only for square matrix-----dry run it
+//    swapping along diagonal------"only for square matrix"-----dry run it
     public static void main(String[] args) {
         int a[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         System.out.print("Before Swapping\n");

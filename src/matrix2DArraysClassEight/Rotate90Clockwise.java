@@ -40,7 +40,7 @@ public class Rotate90Clockwise {
         }
 //        Reversing all rows
         for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[0].length / 2; j++) {
+            for (int j = 0; j < a[0].length / 2; j++) {//we are reversing arrays....single-single row each
                 int temp = a[i][j];
                 a[i][j] = a[i][a.length - j - 1];
                 a[i][a.length - j - 1] = temp;
@@ -57,7 +57,5 @@ public class Rotate90Clockwise {
             }
             System.out.println();
         }
-
-
     }
 }
