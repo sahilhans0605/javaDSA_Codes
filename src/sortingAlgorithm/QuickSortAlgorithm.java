@@ -14,7 +14,7 @@ public class QuickSortAlgorithm {
         int i = l;
         int j = h;
         int pivot = a[l];
-        while (i < j) {
+        while (i < j) {//means array has atleast two elements
             while (i < j && a[i] <= pivot) {
                 i++;
             }
@@ -36,7 +36,7 @@ public class QuickSortAlgorithm {
     }
 
     static void quickSort(int a[], int l, int h) {
-        if (l < h) {
+        if (l < h) {//means array has atleast two elements
             int pivot = partition(a, l, h);//pivot ko uthake uski sahi position pe rkhte h use partitioning logic khte h
 //            pivot ko sort krte h is partitioning function se
 //            aur vo pivot ki sorted array mein sahi position return krdeta h

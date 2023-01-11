@@ -19,7 +19,7 @@ public class BubbleSort {
 //                    swap(a, j, j + 1);
 //                }
 //            }
-//            if (!isSwapped) break;
+//            if (!isSwapped) break;//means humne andar j waale loop mein swap nhi kra means aage array sorted hoga
 //        }
 //    }
 

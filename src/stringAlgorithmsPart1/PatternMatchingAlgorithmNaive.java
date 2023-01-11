@@ -13,8 +13,8 @@ public class PatternMatchingAlgorithmNaive {
         for (int i = 0; i <= s.length() - pattern.length(); i++) {
             int j = i + 1;
             for (int k = 1; k <= pattern.length(); k++) {
-//                System.out.println(i + " " + j);
-//                System.out.println(s.substring(i, j) + "  ");
+                System.out.println(i + " " + j);
+                System.out.println(s.substring(i, j) + "  ");
 
                 if (isEqual(s.substring(i, j), pattern)) {
                     System.out.println(i + " ");

@@ -5,8 +5,8 @@ import java.util.Collections;
 //O(NlogN)---and O(N) for loop...O(NlogN+N)===>O(NlogN)
 public class FindThreeNumbersInAnUnsortedArrayWithGivenSum {
     public static void main(String[] args) {
-        int a[] = {1, 2, 4, 7, 3, 5, -2, 1};
-        int sum = 9;
+        int a[] = {-1,2,1,-4};
+        int sum = 1;
         Arrays.sort(a);
         int start = 0;
         int end = a.length - 1;

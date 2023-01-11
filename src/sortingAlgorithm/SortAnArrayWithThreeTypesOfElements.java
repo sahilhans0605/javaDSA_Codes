@@ -36,7 +36,6 @@ public class SortAnArrayWithThreeTypesOfElements {
                 a[high] = a[mid];
                 a[mid] = temp;
                 high--;
-                mid++;
             }
         }
 

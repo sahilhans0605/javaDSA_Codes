@@ -24,7 +24,58 @@ public class LongestCommonPrefixUsingDivideAndConquer {
 
     public static void main(String[] args) {
         String s[] = {"geeksforgeeks", "geeks", "geek", "geezer"};
-        System.out.print(longestCommonPrefix(s, 0, s.length - 1));
+//        System.out.print(longestCommonPrefix(s, 0, s.length - 1));
+        System.out.println(s[5]);
     }
 
 }
+//class Solution {
+//
+//    String lcp(String s[],int l,int h){
+//
+//        if(l==h){
+//            return s[l];
+//        }
+//        int mid=(l+h)/2;
+//        String leftPart=lcp(s,l,mid);
+//        String rightPart=lcp(s,mid+1,h);
+//        return merge(leftPart,rightPart);
+//    }
+//
+//    String merge(String left,String right){
+//        int limit=Math.min(left.length(),right.length());
+//
+//        for(int i=0;i<limit;i++){
+//            if(left.charAt(i)!=right.charAt(i)){
+//                return left.substring(0,i);
+//            }
+//        }
+//        return left.substring(0,limit);
+//    }
+//
+//    public String longestCommonPrefix(String[] strs) {
+//        return lcp(strs,0,strs.length-1);
+//    }
+//}
+//Leetcode..............................................
+
+//class Solution {
+//    public String longestCommonPrefix(String[] strs) {
+//        Arrays.sort(strs);
+//
+//        char []first=strs[0].toCharArray();
+//        char []last=strs[strs.length-1].toCharArray();
+//
+//        int limit= Math.min(first.length,last.length);
+//
+//        String ans="";
+//
+//        for(int i=0;i<limit;i++){
+//            if(first[i]!=last[i]){
+//                break;
+//            }
+//            ans+=first[i];
+//        }
+//        return ans;
+//    }
+//}
