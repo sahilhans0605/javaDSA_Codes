@@ -15,15 +15,16 @@ public class TrappingRainWaterO1Space {
                     leftMAx = a[left];
                 } else {
                     ans += leftMAx - a[left];
-                    left++;
                 }
+                left++;
+
             } else {
                 if (a[right] > rightmax) {
                     rightmax = a[right];
                 } else {
                     ans += rightmax - a[right];
-                    right--;
                 }
+                right--;
             }
         }
         System.out.println(ans);

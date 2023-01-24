@@ -10,16 +10,16 @@ public class Main {
 //        Stack<Integer>stack = new Stack<>();//it uses vector internally and vector uses array internally and it is not dynamic
 //        //wrapper class ---> INTEGER ArrayDeque<Integer>stack = new ArrayDeque<>();//it uses queue internally that is why it is recommended
 //-------------------------------------OR----------------------------------------------------
-//        ImplementStackUsingLinkedList stackUsingLinkedList = new ImplementStackUsingLinkedList();//no capacity needed it is dynamic stack because it is stack using linkedlist
+        ImplementStackUsingLinkedList stackUsingLinkedList = new ImplementStackUsingLinkedList();//no capacity needed it is dynamic stack because it is stack using linkedlist
 //
 //        stackUsingLinkedList.push(1);
 //        stackUsingLinkedList.push(2);
 //        stackUsingLinkedList.push(3);
 //        stackUsingLinkedList.push(4);
-//        while (!stackUsingLinkedList.isEmpty()) {
-//            System.out.println(stackUsingLinkedList.peek());
-//            System.out.println(stackUsingLinkedList.pop());
-//        }
+        while (!stackUsingLinkedList.isEmpty()) {
+            System.out.println(stackUsingLinkedList.peek());
+            System.out.println(stackUsingLinkedList.pop());
+        }/////////////////////**********************
 //        System.out.println(stackUsingLinkedList.pop());
 //        System.out.println(stackUsingLinkedList.pop());
 //        System.out.println(stackUsingLinkedList.pop());

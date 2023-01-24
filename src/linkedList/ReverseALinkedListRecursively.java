@@ -6,11 +6,11 @@ public class ReverseALinkedListRecursively {
         if (head == null || head.next == null) {
             return head;
         }
-        Nodes temp = head.next;
-        Nodes newNode = reverseRecursively(head.next);
-        temp.next = head;
-        head.next = null;
-        return newNode;//newNode return kiya mtlb last node to return krdiya as head
+        Nodes newNode= reverseRecursively(head.next);//baar baar next head pe jaayega and at the end it will reach to last node....which we will called as newNode
+        head.next.next=head;
+        head.next=null;
+        return newNode;//we will again and again return newHead...which will help us to make bonds again and again....
+        //newNode return kiya mtlb last node to return krdiya as head
     }
 
     static void printLL(Nodes head) {

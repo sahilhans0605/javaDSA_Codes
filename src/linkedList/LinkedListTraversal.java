@@ -60,7 +60,8 @@ public class LinkedListTraversal {
         if(slow==null){
             return 0;
         }
-        while (fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {//fast!=null for evn number of elements and it will return the second middle element
+//            fast.next!=null....it will return the middle element for odd number of elements
             slow = slow.next;
             fast = fast.next.next;
         }

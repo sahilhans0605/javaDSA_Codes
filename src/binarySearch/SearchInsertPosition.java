@@ -19,8 +19,8 @@ public class SearchInsertPosition {
     }
 
     public static void main(String[] args) {
-        int a[] = {1, 3, 5, 6};
-        int key = 7;
+        int a[] = {1, 3, 5, 6,6};
+        int key = -1;
         System.out.println(searchInsertPosition(a, key));
 
     }

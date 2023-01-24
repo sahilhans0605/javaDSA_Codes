@@ -42,3 +42,42 @@ public class AggressiveCowsProblem {
         System.out.println(aggressiveCowsAllocation(a, k));
     }
 }
+
+//class Solution {
+//    public static int solve(int n, int k, int[] stalls) {
+//        if(k>stalls.length){
+//            return -1;
+//        }
+//
+//        Arrays.sort(stalls);
+//        int lo=stalls[0];
+//        int hi= stalls[stalls.length-1]-stalls[0];
+//        int res=-1;
+//        while(lo<=hi){
+//            int mid=(lo+hi)/2;
+//            if(isPossible(stalls,mid,k)){
+//                res=mid;
+//                lo=mid+1;
+//            }else{
+//                hi=mid-1;
+//            }
+//        }
+//        return res;
+//    }
+//
+//    static boolean isPossible(int[]stalls,int barrier,int cows){
+//        int cowCount=1;
+//        int dist=stalls[0];
+//
+//        for(int i=0;i<stalls.length;i++){
+//            if(stalls[i]-dist>=barrier){
+//                cowCount++;
+//                dist=stalls[i];
+//                if(cowCount==cows){
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
+//    }
+//}
