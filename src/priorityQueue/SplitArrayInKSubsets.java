@@ -33,3 +33,21 @@ public class SplitArrayInKSubsets {
 
     }
 }
+
+//    public int splitArray(int[] nums, int k) {
+//        PriorityQueue<Integer>pq= new PriorityQueue<>();
+//        for(int i=0;i<k;i++){
+//            pq.add(0);
+//        }
+//        Arrays.sort(nums);
+//        for(int i=nums.length-1;i>=0;i--){
+//            int min=pq.poll();
+//            min+=nums[i];
+//            pq.add(min);
+//        }
+//        int max= Integer.MIN_VALUE;
+//        for(int e: pq){
+//            max=Math.max(e,max);
+//        }
+//        return max;
+//    }

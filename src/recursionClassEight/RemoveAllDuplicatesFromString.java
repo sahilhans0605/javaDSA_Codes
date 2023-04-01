@@ -7,7 +7,7 @@ import java.util.Set;
 //O(n)--->n length of string
 public class RemoveAllDuplicatesFromString {
     //    SET ki help se
-    static Set<Character> removeDuplicates(String s, int i, Set<Character> set) {
+    static Set<Character> removeDuplicates(String s, int i, Set<Character> set) {//using set
         if (i == s.length()) {
             return set;
         }
@@ -17,7 +17,7 @@ public class RemoveAllDuplicatesFromString {
         return removeDuplicates(s, i + 1, set);
     }
 
-    static void removeDuplicates(String s, int i, String newString, Boolean[] map) {
+    static void removeDuplicates(String s, int i, String newString, Boolean[] map) {//
 //
         if (i == s.length()) {
             System.out.println(newString);

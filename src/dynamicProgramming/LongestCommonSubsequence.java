@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class LongestCommonSubsequence {
     public static int longestCommonSubsequenceMemoization(String a, String b, int m, int n, int memo[][]) {
-
+//here top down whole matrix is not filled...top down or memoization...in this we are using recursion so recursive overhead may take place but if we don't want to use recursion we use bottom up/tabular approach
         if (m == 0 || n == 0) return 0;
         if (memo[m][n] != -1) return memo[m][n];
         if (a.charAt(m - 1) == b.charAt(n - 1)) {
@@ -18,6 +18,7 @@ public class LongestCommonSubsequence {
     }
 
     static int longestCommonSubsequenceBottomUp(String a, String b, int m, int n, int dp[][]) {//tabular method...
+        //here no value remains -1 we fill whole matrix
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 if (a.charAt(i - 1) == b.charAt(j - 1)) {

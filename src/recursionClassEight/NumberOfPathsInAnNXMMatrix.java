@@ -31,6 +31,6 @@ public class NumberOfPathsInAnNXMMatrix {
     }
 
     public static void main(String[] args) {
-        System.out.println(numberOfPaths(51, 9));
+        System.out.println(numberOfPaths(4, 5));
     }
 }

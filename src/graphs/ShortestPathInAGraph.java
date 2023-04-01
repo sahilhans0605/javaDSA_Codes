@@ -16,6 +16,11 @@ public class ShortestPathInAGraph {
         }
     }
 
+    public void addEdge(int src, int dest) {
+        arrayList.get(src).add(dest);
+        arrayList.get(dest).add(src);
+    }
+
     public static void bfs(int src, boolean vis[], int dis[]) {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(src);
@@ -28,7 +33,7 @@ public class ShortestPathInAGraph {
 
             for (int neighbour : arrayList.get(cur)) {
                 if (!vis[neighbour]) {
-                    dis[neighbour] = dis[cur] + 1;
+                    dis[neighbour]=dis[cur]+1;
                     queue.add(neighbour);
                     vis[neighbour] = true;
                 }
@@ -40,12 +45,16 @@ public class ShortestPathInAGraph {
 //        src and dest are given
 //        IN adjacency list
 
-        int v = 4;//4vertices
-        GraphList graph = new GraphList(v);
+        int v = 8;//4vertices
+        ShortestPathInAGraph graph = new ShortestPathInAGraph(v);
         graph.addEdge(0, 1);//0 to 1 an edge should be there
-        graph.addEdge(2, 3);
-        graph.addEdge(0, 3);
         graph.addEdge(2, 1);
+        graph.addEdge(0, 3);
+        graph.addEdge(3, 6);
+        graph.addEdge(5, 7);
+        graph.addEdge(4, 5);
+        graph.addEdge(5, 6);
+        graph.addEdge(4, 6);
         boolean vis[] = new boolean[v];
         int[] dis = new int[v];
         Arrays.fill(dis, Integer.MAX_VALUE);

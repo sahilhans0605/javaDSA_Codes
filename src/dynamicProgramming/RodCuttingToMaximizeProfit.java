@@ -30,16 +30,34 @@ public class RodCuttingToMaximizeProfit {
 
     }
 
-//    static int rodCuttingDP(int[] arr, int n) {
-//        int dp[] = {2, 3, 2, 5};
-//        dp[0] = 0;
-//        int max = Integer.MIN_VALUE;
-//        for (int i = 1; i <= n; i++) {
-//            dp[i] = arr[i] + dp[n - i];
-////            max = Math.max()
-//        }
-//    }
+//    Tabulation1
+    public int cutRod(int price[], int n) {
+        int lengthRod[]= new int[n];
+        for(int i=0;i<lengthRod.length;i++){
+            lengthRod[i]=i+1;
+        }
+        // Tabulation
+        int dp[][]= new int[price.length+1][lengthRod.length+1];
 
+        for(int i=0;i<=price.length;i++){
+            dp[i][0]=0;//if(n==0 || W==0)return 0;
+        }
+
+        for(int j=0;j<=lengthRod.length;j++){
+            dp[0][j]=0; //if(n==0 || W==0)return 0;
+        }
+
+        for(int i=1;i<=price.length;i++){
+            for(int j=1;j<=lengthRod.length;j++){
+                if(lengthRod[i-1]<=j){
+                    dp[i][j]=Math.max(price[i-1]+dp[i][j-lengthRod[i-1]],dp[i-1][j]);//same as unbounded knapsack as it can repeat...cuts...
+                }else{
+                    dp[i][j]=dp[i-1][j];
+                }
+            }
+        }
+        return dp[price.length][n];
+    }
 
     public static void main(String[] args) {
         int n = 4;

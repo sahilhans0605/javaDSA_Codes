@@ -381,41 +381,41 @@ public class BinaryTreeBasicsCreation<sc> {
         int tree[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
 
         Node root = binaryTreeBasicsCreation.createBinaryTree(tree);
-        System.out.println(root.data);
-        System.out.println("*******************");
-        preorder(root);//root is printed in starting
-        System.out.println("*******************");
-        inorderTraversal(root);//root is printed in between
-        System.out.println("*******************");
-        postorder(root);//root is printed at the end
+//        System.out.println(root.data);
+//        System.out.println("*******************");
+//        preorder(root);//root is printed in starting
+//        System.out.println("*******************");
+//        inorderTraversal(root);//root is printed in between
+//        System.out.println("*******************");
+//        postorder(root);//root is printed at the end
 //        O(n) time complexity...as it has gone through all the nodes of tree...n is number of nodes
-        System.out.println("*******************");
-        levelOrderTraversal(root);
-        System.out.println("*******************");
-        System.out.println(numberOfNodes(root));
-        System.out.println("*******************");
-        System.out.println(SumOfNodes(root));
-        System.out.println("*******************");
-        System.out.println(heightOfATree(root));
-        System.out.println("*******************");
-        System.out.println(diameterOfATree(root));
-        System.out.println("*******************");
-        System.out.println(nodesAtDistanceKFromRoot(root, 2));
-        System.out.println("*******************");
-        List<List<Integer>> list = zigZagTraversal(root);
-        System.out.println(list);
-        System.out.println("*******************");
-        leftViewOfABinaryTree(root);
-        System.out.println("*******************");
-        topViewOfABinaryTree(root);
-        System.out.println("*******************");
-        inorderIterative(root);
-        System.out.println("*******************");
-        System.out.println(diameterOfATreeOptimised(root));
-        System.out.println("*******************");
-        printAllAncestorsOfABinaryTree(root, 4);
-        System.out.println("*******************");
-        binaryTreeToDoublyLinkedList(root);
+//        System.out.println("*******************");
+//        levelOrderTraversal(root);
+//        System.out.println("*******************");
+//        System.out.println(numberOfNodes(root));
+//        System.out.println("*******************");
+//        System.out.println(SumOfNodes(root));
+//        System.out.println("*******************");
+//        System.out.println(heightOfATree(root));
+//        System.out.println("*******************");
+//        System.out.println(diameterOfATree(root));
+//        System.out.println("*******************");
+//        System.out.println(nodesAtDistanceKFromRoot(root, 2));
+//        System.out.println("*******************");
+//        List<List<Integer>> list = zigZagTraversal(root);
+//        System.out.println(list);
+//        System.out.println("*******************");
+//        leftViewOfABinaryTree(root);
+//        System.out.println("*******************");
+//        topViewOfABinaryTree(root);
+//        System.out.println("*******************");
+//        inorderIterative(root);
+//        System.out.println("*******************");
+//        System.out.println(diameterOfATreeOptimised(root));
+//        System.out.println("*******************");
+        printAllAncestorsOfABinaryTree(root, 6);
+//        System.out.println("*******************");
+//        binaryTreeToDoublyLinkedList(root);
     }
 
 

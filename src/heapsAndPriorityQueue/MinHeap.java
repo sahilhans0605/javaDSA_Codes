@@ -22,7 +22,7 @@ public class MinHeap {
         buildHeap();
     }
 
-    public void insert(int key) throws Exception {
+    public void insert(int key) throws Exception {//TC logn as we insert by travelling whole height of tree
         if (n == capacity) throw new Exception("Heap is full");
         n++;
         a[n] = key;//first element a[1]=key

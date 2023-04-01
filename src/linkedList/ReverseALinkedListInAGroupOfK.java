@@ -36,13 +36,17 @@ public class ReverseALinkedListInAGroupOfK {
         Nodes n4 = new Nodes(40);
         Nodes n5 = new Nodes(50);
         Nodes n6 = new Nodes(60);
+        Nodes n7 = new Nodes(70);
+        Nodes n8 = new Nodes(80);
 
         n1.next = n2;
-        n2.next=n3;
-        n3.next=n4;
-        n4.next=n5;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
         n5.next = n6;
-        Nodes newHead =reverseK(n1,3);
+        n6.next = n7;
+        n7.next = n8;
+        Nodes newHead = reverseK(n1, 3);
         printLL(newHead);
     }
 }

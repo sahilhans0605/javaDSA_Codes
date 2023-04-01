@@ -3,7 +3,7 @@ package dynamicProgramming;
 import java.util.Arrays;
 
 public class minCoins {
-
+//IN this question only one parameter is ther
     static public int minCoinsUsingRecursion(int[] a, int n) {
         if (n == 0) return 0;
         if (n < 0) return Integer.MAX_VALUE;
